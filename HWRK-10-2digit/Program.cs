@@ -1,4 +1,5 @@
 ﻿//программа, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+
 Console.Clear();
 
 int inputnumbers()
@@ -27,7 +28,7 @@ int inputnumbers()
     }
     return number;
 }
-void doingMain() // эта функция, собственно, и выполняет задание. самая сложная тут.
+void doingMain() // эта функция, собственно, и выполняет задание. самая сложная тут!
 {
     int mynumber = inputnumbers();
     int seconddigit = mynumber % 100 / 10;
@@ -39,9 +40,9 @@ while (wanttocontinue)
 {
     doingMain();
     Console.Write("Хотите ввести число ещё раз? (y/n)}");
-    Console.WriteLine(); 
+    Console.WriteLine();
 
-    switch (Console.ReadKey(true).Key.ToString().ToLower())
+    switch (Console.ReadKey(true).Key.ToString().ToLower()) //вот эта монструозная конструкция вообще законна?
     {
         case "y":
             wanttocontinue = true;

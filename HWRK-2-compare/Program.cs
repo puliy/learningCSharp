@@ -2,8 +2,8 @@
 
 int inputnumbers()
 {
-    int number=0;
-    bool isConverted = false;   
+    int number = 0;
+    bool isConverted = false;
     while (isConverted != true)
     {
         Console.Write("Введите число (целое): ");
@@ -23,13 +23,13 @@ int inputnumbers()
 }
 
 Console.WriteLine("Нужно ввести 2 числа для сравнения.");
-int numberA=inputnumbers();
-int numberB=inputnumbers();
-if (numberA>numberB)
+int numberA = inputnumbers();
+int numberB = inputnumbers();
+if (numberA > numberB)
 {
     Console.WriteLine($"Первое число {numberA} больше, чем второе число {numberB}");
 }
-else if (numberA<numberB)
+else if (numberA < numberB)
 {
     Console.WriteLine($"Второе число {numberB} больше, чем первое число {numberA}");
 }

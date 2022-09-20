@@ -25,16 +25,16 @@ int inputnumbers()
 Console.WriteLine("Программа принимает число и выводит все чётные числа от 1 до введённого числа.");
 Console.WriteLine("Для работы программы необходимо задать число.");
 
-int numberA=inputnumbers();
+int numberA = inputnumbers();
 
-int count=1;
+int count = 1;
 
 Console.Write($"Чётные числа от 1 до {numberA}: ");
-while (count<=numberA)
+while (count <= numberA)
 {
-    if (count%2==0)
+    if (count % 2 == 0)
     {
-        Console.Write(count+" ");
+        Console.Write(count + " ");
     }
     count++;
 }
